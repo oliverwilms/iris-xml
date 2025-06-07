@@ -1,0 +1,27 @@
+GXML>Set p=##class(GXML.Person).%OpenId(1)
+ 
+GXML>Set w=##class(%XML.Writer).%New()
+ 
+GXML>Set w.Indent=1
+ 
+GXML>Set status=w.RootObject(p)
+<?xml version="1.0" encoding="UTF-8"?>
+<Person GroupID="R9685">
+  <Name>Zimmerman,Jeff R.</Name>
+  <DOB>1961-10-03</DOB>
+  <Address>
+    <City>Islip</City>
+    <Zip>15020</Zip>
+  </Address>
+  <Doctors>
+    <Doctor>
+      <Name>Sorenson,Chad A.</Name>
+    </Doctor>
+    <Doctor>
+      <Name>Sorenson,Chad A.</Name>
+    </Doctor>
+    <Doctor>
+      <Name>Uberoth,Roger C.</Name>
+    </Doctor>
+  </Doctors>
+</Person>
