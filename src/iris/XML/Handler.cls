@@ -1,7 +1,9 @@
-Class XML.Handler extends %XML.SAX.ContentHandler
+Class XML.Handler Extends %XML.SAX.ContentHandler
 {
+
 // ...
-ClassMethod ReadFile(file as %String) as %Status
+
+ClassMethod ReadFile(file As %String) As %Status
 {
     //create an instance of this class
     set handler=..%New()
@@ -12,4 +14,5 @@ ClassMethod ReadFile(file as %String) as %Status
     //quit with status
     quit status
 }
+
 }
